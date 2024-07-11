@@ -1,0 +1,17 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - init: |
+      sudo apt-get update
+      sudo apt-get install -y openjdk-11-jdk android-sdk
+      ./gradlew clean
+  - command: ./gradlew build
+
+vscode:
+  extensions:
+    - vscjava.vscode-java-pack
+    - redhat.java
+    - vscjava.vscode-gradle
+    - esbenp.prettier-vscode
+    - ms-azuretools.vscode-docker
