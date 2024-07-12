@@ -6,7 +6,7 @@ tasks:
       sudo apt-get update
       sudo apt-get install -y openjdk-11-jdk android-sdk
       ./gradlew clean
-  - command: ./gradlew build
+  - command: /workspace/Teachable_Machine_Mobile/Teachable Machine Mobile/android  ./gradlew build
 
 vscode:
   extensions:
